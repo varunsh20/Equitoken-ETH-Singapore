@@ -1,0 +1,22 @@
+[
+    {
+        "img": "/src/assets/tsla.png",
+        "name": "CTSLA",
+        "address": "0x20508E18C6944948a32016dCB23053A86fD3aA00"
+    },
+    {
+        "img": "/src/assets/images.png",
+        "name": "cNVDA",
+        "address": "0x33ccF5E0fbD2c9FA0F286c584B36b004513Df90D"
+    },
+    {
+        "img": "/src/assets/meta.png",
+        "name": "CMETA",
+        "address": "0xF1ADcc2b77e452A4477c00EFcB89fa96ea00295f"
+    },
+    {
+        "img": "/src/assets/gogl.png",
+        "name": "CGOOG",
+        "address": "0xF1ADcc2b77e452A4477c00EFcB89fa96ea00295f"
+    }
+]
