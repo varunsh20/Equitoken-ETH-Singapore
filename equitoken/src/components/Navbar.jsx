@@ -6,6 +6,7 @@ import { VerificationLevel, IDKitWidget, useIDKit } from "@worldcoin/idkit";
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import logo from "../assets/logo.png";
 import { useDynamicContext } from '@dynamic-labs/sdk-react-core';
 
 export default function Navbar(){
@@ -55,7 +56,7 @@ export default function Navbar(){
                     px={[3, 3, 12]} sx={{backdropFilter: "blur(15px)",}}>
                     <Box>
                        <HStack>
-                            <Box w="60px" h="60px" as="img"  alt="logo"/>
+                            <Box w="60px" h="60px" as="img"  src={logo} alt="logo"/>
                             <Heading color="white" ml="12px" mr = "40px" fontSize={"35px"} >
                                 EquiToken
                             </Heading>
