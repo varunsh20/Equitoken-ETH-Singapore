@@ -66,7 +66,6 @@ export default function Navbar(){
                         <TabList >
                         <Tab fontSize="20px" fontWeight="400" ><Link to = "/" >Home</Link></Tab>
                         <Tab fontSize="20px" fontWeight="400"><Link to = "/buy">Buy Tokens</Link></Tab>
-                        <Tab fontSize="20px" fontWeight="400"><Link to = "/analyze">Analyze</Link></Tab>
                         </TabList>
                         <TabIndicator mt="-1.5px" height="2px" bg="#5684db" borderRadius="1px"/>
                     </Tabs>
