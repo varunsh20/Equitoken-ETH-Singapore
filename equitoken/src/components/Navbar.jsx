@@ -4,6 +4,8 @@ import { DynamicContextProvider, DynamicWidget } from '@dynamic-labs/sdk-react-c
 import { EthereumWalletConnectors } from "@dynamic-labs/ethereum";
 import { VerificationLevel, IDKitWidget, useIDKit } from "@worldcoin/idkit";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useDynamicContext } from '@dynamic-labs/sdk-react-core';
 
 export default function Navbar(){
@@ -16,10 +18,7 @@ export default function Navbar(){
 
     const onSuccess = (result) => {
         setVerified(true);
-        window.alert(
-          "Successfully verified with World ID! Your nullifier hash is: " +
-            result.nullifier_hash
-        );
+        //toast.success("Successfully verified with World ID!");
     };
 
     const handleProof = async (result) => {
@@ -87,6 +86,7 @@ export default function Navbar(){
                 </HStack>
             </Box >
         </Box>
+        <ToastContainer position="top-center"/>
         </>
     )
 }
