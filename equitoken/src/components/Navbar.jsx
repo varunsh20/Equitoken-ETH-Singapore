@@ -18,12 +18,11 @@ export default function Navbar(){
 
     const onSuccess = (result) => {
         setVerified(true);
-        //toast.success("Successfully verified with World ID!");
     };
 
     const handleProof = async (result) => {
         try {
-          const response = await fetch("http://localhost:5000/verify", {
+          const response = await fetch("https://world-id-backend.vercel.app/verify", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -66,7 +65,6 @@ export default function Navbar(){
                         <TabList >
                         <Tab fontSize="20px" fontWeight="400" ><Link to = "/" >Home</Link></Tab>
                         <Tab fontSize="20px" fontWeight="400"><Link to = "/buy">Buy Tokens</Link></Tab>
-                        <Tab fontSize="20px" fontWeight="400"><Link to = "/swap">Swap</Link></Tab>
                         <Tab fontSize="20px" fontWeight="400"><Link to = "/analyze">Analyze</Link></Tab>
                         </TabList>
                         <TabIndicator mt="-1.5px" height="2px" bg="#5684db" borderRadius="1px"/>
